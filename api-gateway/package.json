@@ -1,0 +1,22 @@
+{
+  "name": "api-gateway",
+  "version": "1.0.0",
+  "description": "Api gateway service",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "api",
+    "gateway",
+    "nodejs"
+  ],
+  "author": "Rouch",
+  "license": "ISC",
+  "devDependencies": {
+
+  },
+  "dependencies": {
+    
+  }
+}
