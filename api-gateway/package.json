@@ -4,7 +4,8 @@
   "description": "Api gateway service",
   "main": "src/index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc -p tsconfig.json",
+    "start": "node index.js"
   },
   "keywords": [
     "api",
@@ -13,10 +14,10 @@
   ],
   "author": "Rouch",
   "license": "ISC",
-  "devDependencies": {
-
-  },
   "dependencies": {
-    
+    "fastify": "^3.22.1"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.6"
   }
 }
