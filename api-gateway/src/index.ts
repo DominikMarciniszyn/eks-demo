@@ -1,19 +1,23 @@
 import fastify from "fastify";
+import Logger from './utils/logger';
 
 
 const server = fastify();
 const port = 3030;
+const context = 'Server';
+const logger = new Logger();
 
 
 server.get('/healthz', async (request, response) => {
+  logger.info('Healthcheck...', context);
   return 'Service is alive!';
 });
 
 server.listen(port, (error, address) => {
   if (error) {
-    console.error(error); //TODO: Replace with winston logger
+    logger.error('Something went wrong with the server!', context);
     process.exit(1);
   }
 
-  console.log(`Server is listening at ${port}`); //TODO: Replace with winston logger
+  logger.info(`Server is listening at ${port}`, context);
 });
