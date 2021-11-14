@@ -6,4 +6,3 @@ class Item(BaseModel):
     name: str
     price: float
     is_avaliable: Optional[bool] = None
-
